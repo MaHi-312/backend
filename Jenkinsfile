@@ -7,11 +7,23 @@ pipeline {
 
     stages {
 
-      stage('CI'){
+      stage('compile code'){
         steps {
            echo 'CI'
-            }
         }
+      }
+
+      stage('Unit tests'){
+        steps {
+           echo 'CI'
+        }
+      }
+
+      stage('Release'){
+        steps {
+           echo 'CI'
+        }
+      }
     }
 }
 
