@@ -7,9 +7,14 @@ pipeline {
 
     stages {
 
-      stage('compile code'){
+      stage('Download Dependencies'){
         steps {
-           echo 'CI'
+           sh 'npm install'
+        }
+      }
+      stage('code quality'){
+        steps {
+           sh 'npm install'
         }
       }
 
