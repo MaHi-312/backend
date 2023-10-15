@@ -20,7 +20,8 @@ pipeline {
 
       stage('Unit tests'){
         steps {
-           echo 'CI'
+            // ideally we should run the tests, but here the developer have skipped it.so assuming those are good and procceding.
+            // sh 'npm test'
         }
       }
 
